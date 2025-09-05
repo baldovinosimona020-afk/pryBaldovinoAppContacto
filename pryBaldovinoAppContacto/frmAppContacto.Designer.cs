@@ -44,7 +44,6 @@
             txtContacto.Name = "txtContacto";
             txtContacto.Size = new Size(248, 23);
             txtContacto.TabIndex = 0;
-            txtContacto.TextChanged += txtContacto_TextChanged;
             // 
             // lblContacto
             // 
