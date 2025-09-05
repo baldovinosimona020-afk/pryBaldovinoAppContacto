@@ -117,6 +117,7 @@
             Controls.Add(txtContacto);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmAppContacto";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Aplicación de contacto";
             ResumeLayout(false);
             PerformLayout();

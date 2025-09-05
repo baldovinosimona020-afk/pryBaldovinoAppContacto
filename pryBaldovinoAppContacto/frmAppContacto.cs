@@ -17,10 +17,10 @@ namespace pryBaldovinoAppContacto
             InitializeComponent();
         }
 
-  
         string vContacto = "";
         string vTelefono = "";
         int vContador = 0;
+
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
@@ -28,11 +28,11 @@ namespace pryBaldovinoAppContacto
             vContacto = txtContacto.Text;
             vTelefono = txtTelefono.Text;
 
-            string vResultado = vContador + "---" + vContacto + "---" vTelefono;
+            string vResultado = vContador + "---" + vContacto + "---" + vTelefono;
             lstDatos.Items.Add(vResultado);
 
-            string vContacto = "";
-            string vTelefono = "";
+            vContacto = "";
+            vTelefono = "";
             txtContacto.Focus();
         }
     }
