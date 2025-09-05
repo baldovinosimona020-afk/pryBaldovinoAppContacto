@@ -22,8 +22,14 @@ namespace pryBaldovinoAppContacto
 
         }
 
+        string vContacto
+        string vTelefono
+
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            vContador++;
+            vContacto = txtContacto.Text;
+            vTelefono = txtTelefono.Text;
 
         }
     }
