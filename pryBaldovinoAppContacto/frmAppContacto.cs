@@ -22,9 +22,35 @@ namespace pryBaldovinoAppContacto
 
         }
 
+        string vContacto = "";
+        string vTelefono = "";
+        int vContador = 0;
+        
+
+        string[] vecContacto = new string[3];
+        string[] vecTelefono = new string[3];
+
+
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            if (txtContacto.Text != "")
+                btnGrabar.Enabled = true;
 
+            vContador++;
+            vContacto = txtContacto.Text;   
+            vTelefono = txtTelefono.Text;
+
+            string vResultado = vContacto + " -- " + vTelefono;
+            
+            lstDatos.Items.Add(vResultado);
+
+            vecContacto[3] = vContacto;
+            vecTelefono[3] = vTelefono;
+
+           
+            txtContacto.Text = "";
+            txtTelefono.Text = "";
+            txtContacto.Focus();
         }
     }
 }
