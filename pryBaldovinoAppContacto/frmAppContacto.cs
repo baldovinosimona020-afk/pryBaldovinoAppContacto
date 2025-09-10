@@ -25,10 +25,10 @@ namespace pryBaldovinoAppContacto
         string vContacto = "";
         string vTelefono = "";
         int vContador = 0;
-        
+        int indice = 0;
 
-        string[] vecContacto = new string[3];
-        string[] vecTelefono = new string[3];
+        string[] vecContacto = new string[8];
+        string[] vecTelefono = new string[8];
 
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -44,10 +44,11 @@ namespace pryBaldovinoAppContacto
             
             lstDatos.Items.Add(vResultado);
 
-            vecContacto[3] = vContacto;
-            vecTelefono[3] = vTelefono;
+            vecContacto[indice] = vContacto;
+            vecTelefono[indice] = vTelefono;
+            indice++;
 
-           
+
             txtContacto.Text = "";
             txtTelefono.Text = "";
             txtContacto.Focus();
