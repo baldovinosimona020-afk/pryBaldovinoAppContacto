@@ -40,9 +40,10 @@
             // 
             // txtContacto
             // 
-            txtContacto.Location = new Point(149, 32);
+            txtContacto.Location = new Point(170, 43);
+            txtContacto.Margin = new Padding(3, 4, 3, 4);
             txtContacto.Name = "txtContacto";
-            txtContacto.Size = new Size(218, 23);
+            txtContacto.Size = new Size(249, 27);
             txtContacto.TabIndex = 0;
             txtContacto.TextChanged += txtContacto_TextChanged;
             // 
@@ -50,9 +51,9 @@
             // 
             lblContacto.AutoSize = true;
             lblContacto.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblContacto.Location = new Point(34, 30);
+            lblContacto.Location = new Point(39, 40);
             lblContacto.Name = "lblContacto";
-            lblContacto.Size = new Size(77, 21);
+            lblContacto.Size = new Size(93, 28);
             lblContacto.TabIndex = 1;
             lblContacto.Text = "Contacto";
             // 
@@ -60,26 +61,28 @@
             // 
             lblTelefono.AutoSize = true;
             lblTelefono.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTelefono.Location = new Point(34, 88);
+            lblTelefono.Location = new Point(39, 117);
             lblTelefono.Name = "lblTelefono";
-            lblTelefono.Size = new Size(74, 21);
+            lblTelefono.Size = new Size(91, 28);
             lblTelefono.TabIndex = 2;
             lblTelefono.Text = "Teléfono";
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(149, 86);
+            txtTelefono.Location = new Point(170, 115);
+            txtTelefono.Margin = new Padding(3, 4, 3, 4);
             txtTelefono.Mask = "(999)000-0000";
             txtTelefono.Name = "txtTelefono";
-            txtTelefono.Size = new Size(218, 23);
+            txtTelefono.Size = new Size(249, 27);
             txtTelefono.TabIndex = 3;
             // 
             // btnGrabar
             // 
             btnGrabar.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnGrabar.Location = new Point(246, 134);
+            btnGrabar.Location = new Point(281, 179);
+            btnGrabar.Margin = new Padding(3, 4, 3, 4);
             btnGrabar.Name = "btnGrabar";
-            btnGrabar.Size = new Size(121, 28);
+            btnGrabar.Size = new Size(138, 37);
             btnGrabar.TabIndex = 4;
             btnGrabar.Text = "Grabar";
             btnGrabar.UseVisualStyleBackColor = true;
@@ -88,27 +91,28 @@
             // lstDatos
             // 
             lstDatos.FormattingEnabled = true;
-            lstDatos.ItemHeight = 15;
-            lstDatos.Location = new Point(34, 186);
+            lstDatos.Location = new Point(39, 248);
+            lstDatos.Margin = new Padding(3, 4, 3, 4);
             lstDatos.Name = "lstDatos";
-            lstDatos.Size = new Size(333, 94);
+            lstDatos.Size = new Size(380, 124);
             lstDatos.TabIndex = 5;
             // 
             // btnCancelar
             // 
             btnCancelar.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCancelar.Location = new Point(119, 134);
+            btnCancelar.Location = new Point(136, 179);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(121, 28);
+            btnCancelar.Size = new Size(138, 37);
             btnCancelar.TabIndex = 6;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
             // frmAppContacto
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(404, 300);
+            ClientSize = new Size(462, 400);
             Controls.Add(btnCancelar);
             Controls.Add(lstDatos);
             Controls.Add(btnGrabar);
@@ -116,7 +120,10 @@
             Controls.Add(lblTelefono);
             Controls.Add(lblContacto);
             Controls.Add(txtContacto);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
             Name = "frmAppContacto";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Aplicación de contacto";
